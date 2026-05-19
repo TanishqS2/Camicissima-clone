@@ -1096,10 +1096,11 @@ button {
   justify-content: center;
 
   text-decoration: none;
+  text-transform: uppercase;
 
   color: #000;
 
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 500;
 
   letter-spacing: 0;
@@ -1138,8 +1139,6 @@ button {
   border-radius: 0;
   padding: 10px;
 }
-
-/* ===== Mobile drawer ===== */
 
 /* ===== Mobile drawer ===== */
 .mobile-drawer {
@@ -1655,8 +1654,6 @@ button {
     height: 42px;
 
     padding: 0 20px;
-
-    font-size: 15px;
   }
 }
 
@@ -1985,8 +1982,6 @@ button {
     height: 40px;
 
     padding: 0 18px;
-
-    font-size: 14px;
   }
 }
 
@@ -2078,6 +2073,6 @@ button {
 
     padding: 0 16px;
 
-    font-size: 13px;
+    font-size: 12px;
   }
 }
