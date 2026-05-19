@@ -1824,8 +1824,9 @@ button {
 
   .top-btn {
     display: block;
-    width: 100%;
+    width: 50%;
     padding: 12px;
+    margin: 0 auto;
   }
 
   .owl-stage .owl-item {
