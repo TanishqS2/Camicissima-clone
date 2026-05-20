@@ -656,6 +656,7 @@ button {
   background: url("https://www.camicissima.it/media/wysiwyg/banner/welcome_desk_SS26.jpg");
   background-position: bottom right;
   background-repeat: no-repeat;
+   background-size: cover;
    background-color: #000;
 }
 
