@@ -1433,6 +1433,10 @@ button {
    .section-categories a.cat-card img{
       width: stretch;
    }
+
+   .hero-section{
+      padding-top: 45px;
+   }
 }
 
 /* ---------- LARGE DEVICES ---------- */
@@ -1465,6 +1469,9 @@ button {
     font-size: 20px;
   }
 
+   .hero-section{
+      padding-top: 45px;
+   }
    
 }
 
@@ -1529,6 +1536,10 @@ button {
   .top-seller-sec .top-title {
     font-size: 28px;
   }
+
+   .hero-section{
+      padding-top: 45px;
+   }
 }
 
 /* ---------- TABLET ---------- */
