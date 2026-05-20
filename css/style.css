@@ -1397,7 +1397,7 @@ button {
     font-size: 20px;
   }
 
-   .cat-card img{
+   .section-categories a.cat-card img{
       width: stretch;
    }
 }
