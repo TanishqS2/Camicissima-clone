@@ -1148,7 +1148,7 @@ button {
    position:fixed;
    top:0;
    display: none;
-   z-index:200;
+   z-index:9999;
     background: #ffffff;
     padding: 28px 48px 10px;
     box-sizing: border-box;
