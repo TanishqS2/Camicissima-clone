@@ -1396,6 +1396,10 @@ button {
   .overlay-content li {
     font-size: 20px;
   }
+
+   .cat-card img{
+      width: stretch;
+   }
 }
 
 /* ---------- LAPTOP ---------- */
