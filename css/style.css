@@ -1145,10 +1145,19 @@ button {
 
 .search-overlay {
     width: 100%;
-    background: #ececec;
+   position:fixed;
+   top:0;
+   display: none;
+   z-index:200;
+    background: #ffffff;
     padding: 28px 48px 10px;
     box-sizing: border-box;
 }
+
+.search-open{
+   display:block;
+}
+   
 
 .search-wrapper {
     display: flex;
