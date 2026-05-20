@@ -1367,6 +1367,12 @@ button {
    RESPONSIVE
    ========================================================= */
 
+@media(min-width: 1401px){
+   .section-categories a.cat-card img{
+      width: stretch;
+   }
+}
+
 /* ---------- LARGE DEVICES ---------- */
 @media (max-width: 1400px) {
   .footer-top {
@@ -1397,9 +1403,7 @@ button {
     font-size: 20px;
   }
 
-   .section-categories a.cat-card img{
-      width: stretch;
-   }
+   
 }
 
 /* ---------- LAPTOP ---------- */
