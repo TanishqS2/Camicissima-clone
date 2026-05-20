@@ -1141,6 +1141,61 @@ button {
   padding: 10px;
 }
 
+/* Search bar */
+
+.search-overlay {
+    width: 100%;
+    background: #ececec;
+    padding: 28px 48px 10px;
+    box-sizing: border-box;
+}
+
+.search-wrapper {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #3b82f6;
+    padding-bottom: 14px;
+    gap: 18px;
+}
+
+.search-icon,
+.close-search {
+    border: 0;
+    background: transparent;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #111;
+    flex-shrink: 0;
+}
+
+.search-input {
+    flex: 1;
+    border: 0;
+    outline: none;
+    background: transparent;
+    font-size: 24px;
+    font-weight: 400;
+    color: #111;
+    font-family: Arial, sans-serif;
+    padding: 0;
+}
+
+.search-input::placeholder {
+    color: #666;
+    opacity: 1;
+}
+
+/* Optional Smooth Animation */
+.search-wrapper,
+.search-input,
+.search-icon,
+.close-search {
+    transition: all 0.3s ease;
+}
+
 /* ===== Mobile drawer ===== */
 .mobile-drawer {
   position: fixed;
