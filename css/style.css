@@ -1737,6 +1737,10 @@ button {
 
     padding: 0 20px;
   }
+
+   .hero-section{
+      padding-top: 0;
+   }
 }
 
 /* ---------- MOBILE ---------- */
