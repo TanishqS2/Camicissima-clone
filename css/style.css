@@ -1405,7 +1405,7 @@ button {
 /* ---------- LAPTOP ---------- */
 @media (max-width: 1200px) {
   .primary-nav .nav {
-    gap: 8px;
+    gap: 3px;
   }
 
   .primary-nav .nav-link {
