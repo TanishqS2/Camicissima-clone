@@ -188,7 +188,22 @@ function searchLogic() {
       document.body.classList.remove("search-active");
     }
   });
+
+  const input = document.querySelector(".search-input");
+
+  function searchNow() {
+    window.location.href = `https://www.camicissima.it/#3e8d/fullscreen/m=f&q=${encodeURIComponent(input.value)}`;
+  }
+
+  // ENTER KEY
+  input.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") searchNow();
+  });
+
+  // SEARCH ICON CLICK
+  document.querySelector(".search-icon").addEventListener("click", searchNow);
 }
+
 
 document.addEventListener("DOMContentLoaded", () => {
   renderProducts();
