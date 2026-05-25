@@ -184,11 +184,9 @@ button {
   display: block;
 }
 .mega-panel h6 {
-  font-size: 15px;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
+  font-size: 16px;
   font-weight: 600;
-  margin-bottom: 14px;
+  margin-bottom: 10px;
   color: #111;
 }
 .mega-panel ul li:last-child {
@@ -656,6 +654,8 @@ button {
   background: url("https://www.camicissima.it/media/wysiwyg/banner/welcome_desk_SS26.jpg");
   background-position: bottom right;
   background-repeat: no-repeat;
+   background-size: cover;
+   background-color: #000;
 }
 
 /* Container for the newsletter content */
@@ -672,7 +672,7 @@ button {
 /* Main title "Welcome!" */
 .newsletter-title {
   color: white;
-  font-size: 48px;
+  font-size: 40px;
   margin-bottom: 20px;
   font-weight: 400;
 }
@@ -698,7 +698,7 @@ button {
   align-items: flex-end;
   gap: 0;
   margin-bottom: 20px;
-  width: 100%;
+  width: 80%;
   padding-bottom: 5px;
 }
 
@@ -711,7 +711,7 @@ button {
   padding: 10px 0;
   flex-grow: 1;
   outline: none;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 /* "Iscriviti" button */
@@ -722,8 +722,7 @@ button {
   padding: 12px 30px;
   font-weight: 500;
   cursor: pointer;
-  text-transform: uppercase;
-  font-size: 13px;
+  font-size: 14px;
   min-width: 100px;
 }
 
@@ -1140,6 +1139,69 @@ button {
   padding: 10px;
 }
 
+/* Search bar */
+
+.search-overlay {
+    width: 100%;
+   position:fixed;
+   top:0;
+   display: none;
+   z-index:9999;
+    background: #ffffff;
+    padding: 28px 48px 10px;
+    box-sizing: border-box;
+}
+
+.search-open{
+   display:block;
+}
+   
+
+.search-wrapper {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #3b82f6;
+    padding-bottom: 14px;
+    gap: 18px;
+}
+
+.search-icon,
+.close-search {
+    border: 0;
+    background: transparent;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #111;
+    flex-shrink: 0;
+}
+
+.search-input {
+    flex: 1;
+    border: 0;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+    font-weight: 400;
+    color: #111;
+    padding: 0;
+}
+
+.search-input::placeholder {
+    color: #666;
+    opacity: 1;
+}
+
+/* Optional Smooth Animation */
+.search-wrapper,
+.search-input,
+.search-icon,
+.close-search {
+    transition: all 0.3s ease;
+}
+
 /* ===== Mobile drawer ===== */
 .mobile-drawer {
   position: fixed;
@@ -1366,6 +1428,16 @@ button {
    RESPONSIVE
    ========================================================= */
 
+@media(min-width: 1401px){
+   .section-categories a.cat-card img{
+      width: stretch;
+   }
+
+   .hero-section{
+      padding-top: 45px;
+   }
+}
+
 /* ---------- LARGE DEVICES ---------- */
 @media (max-width: 1400px) {
   .footer-top {
@@ -1381,11 +1453,11 @@ button {
   }
 
   .newsletter-content {
-    padding: 220px 100px;
+    padding: 220px 160px;
   }
 
   .newsletter-text {
-    max-width: 62%;
+    max-width: 41%;
   }
 
   .overlay-content h2 {
@@ -1395,12 +1467,17 @@ button {
   .overlay-content li {
     font-size: 20px;
   }
+
+   .hero-section{
+      padding-top: 45px;
+   }
+   
 }
 
 /* ---------- LAPTOP ---------- */
 @media (max-width: 1200px) {
   .primary-nav .nav {
-    gap: 8px;
+    gap: 3px;
   }
 
   .primary-nav .nav-link {
@@ -1458,6 +1535,10 @@ button {
   .top-seller-sec .top-title {
     font-size: 28px;
   }
+
+   .hero-section{
+      padding-top: 45px;
+   }
 }
 
 /* ---------- TABLET ---------- */
@@ -1655,6 +1736,10 @@ button {
 
     padding: 0 20px;
   }
+
+   .hero-section{
+      padding-top: 0;
+   }
 }
 
 /* ---------- MOBILE ---------- */

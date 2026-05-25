@@ -158,10 +158,60 @@ function setupCartDemo() {
   });
 }
 
+// search logic
+
+function searchLogic() {
+  const searchOverlay = document.querySelector(".search-overlay");
+
+  const searchButtons = document.querySelectorAll(".search-toggle");
+
+  const closeSearch = document.querySelector(".close-search");
+
+  // OPEN SEARCH FROM BOTH BUTTONS
+  searchButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      searchOverlay.classList.add("search-open");
+      document.body.classList.add("search-active");
+    });
+  });
+
+  // CLOSE SEARCH
+  closeSearch.addEventListener("click", () => {
+    searchOverlay.classList.remove("search-open");
+    document.body.classList.remove("search-active");
+  });
+
+  // CLOSE ON ESC
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+      searchOverlay.classList.remove("search-open");
+      document.body.classList.remove("search-active");
+    }
+  });
+
+  const input = document.querySelector(".search-input");
+
+  function searchNow() {
+    window.location.href = `https://www.camicissima.it/#3e8d/fullscreen/m=f&q=${encodeURIComponent(input.value)}`;
+  }
+
+  // ENTER KEY
+  input.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") searchNow();
+  });
+
+  // SEARCH ICON CLICK
+  document.querySelector(".search-icon").addEventListener("click", searchNow);
+}
+
+
 document.addEventListener("DOMContentLoaded", () => {
   renderProducts();
   setupCarouselArrows();
   setupMegaMenu();
   setupMobileDrawer();
   setupCartDemo();
+   searchLogic();
 });
+
+
