@@ -1,0 +1,227 @@
+p {
+  margin: 0;
+}
+
+.top-badge {
+  text-align: center;
+  color: white;
+  background: #001f49;
+  padding: 5px;
+}
+
+.top-badge a {
+  animation:
+    glowFashion 1.5s infinite alternate,
+    shine 6s linear infinite;
+  display: inline-block;
+}
+
+.top-badge a:hover,
+.green-strip a:hover {
+  color: #fff;
+}
+
+.green-strip {
+  text-align: center;
+  color: #fff;
+  background: #11695f;
+  font-size: 16px;
+}
+
+.page-title {
+  text-align: center;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+.page-loc {
+  padding: 20px 45px;
+  font-size: 12px;
+  margin: 0;
+}
+
+.filter-sec {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.filter-sec button {
+  padding: 10px 20px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  width: 200px;
+}
+
+.editorial-sec {
+  padding: 40px;
+  font-size: 12px;
+}
+
+.editorial-sec h2 {
+  font-size: 24px;
+}
+
+/* Product Grid */
+.product-page-main {
+  margin-top: 140px;
+}
+.products-section {
+  padding: 40px 60px;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+}
+
+.product-card {
+  width: auto;
+}
+
+.product-image-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.product-image {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  transition: 0.4s ease;
+}
+
+.product-card:hover .product-image {
+  transform: scale(1.04);
+}
+
+.discount-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: #d9a520;
+  color: #000;
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.discount-badge::before {
+  z-index: 99;
+  content: "";
+  position: absolute;
+  top: 10%;
+  right: 42%;
+  width: 8px;
+  height: 8px;
+  background: white;
+  border-radius: 50%;
+  border: 1px solid #efeeee;
+}
+
+.product-content {
+  padding-top: 16px;
+}
+
+.price-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.old-price {
+  color: #999;
+  text-decoration: line-through;
+  font-size: 16px;
+}
+
+.black-discount {
+  background: #000;
+  color: #fff;
+  padding: 3px 10px;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.final-price {
+  font-size: 16px;
+  color: #000;
+}
+
+@media (max-width: 1200px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 991px) {
+  .product-page-main {
+    margin-top: 0;
+  }
+
+  .filter-sec {
+    padding: 0;
+  }
+
+  .filter-sec button {
+    width: 100%;
+    background: #f0f0f0;
+    border: none;
+    padding: 14px;
+    margin: 1em 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .products-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .products-section {
+    padding: 20px;
+  }
+
+  .editorial-sec {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .editorial-sec {
+    padding: 5px;
+  }
+}
+
+@keyframes glowFashion {
+  0% {
+    text-shadow: 0 0 0px #ffffff;
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.08);
+  }
+  100% {
+    text-shadow: 0 0 0px #ffffff;
+    transform: scale(1);
+  }
+}
+
+@keyframes shine {
+  0% {
+    background-position: -200% center;
+  }
+
+  100% {
+    background-position: 200% center;
+  }
+}

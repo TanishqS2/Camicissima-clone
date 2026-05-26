@@ -204,14 +204,11 @@ function searchLogic() {
   document.querySelector(".search-icon").addEventListener("click", searchNow);
 }
 
-
 document.addEventListener("DOMContentLoaded", () => {
   renderProducts();
   setupCarouselArrows();
   setupMegaMenu();
   setupMobileDrawer();
   setupCartDemo();
-   searchLogic();
+  searchLogic();
 });
-
-

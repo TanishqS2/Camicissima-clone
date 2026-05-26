@@ -21,9 +21,15 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/camicie.css" />
   </head>
   <body>
     <header class="site-header">
+      <p class="top-badge">
+        <a href="https://www.camicissima.it/non-iron"
+          >Special Promo: 4 Camicie Non-Iron a scelta x 199,90 (-50%)!</a
+        >
+      </p>
       <div class="container-fluid px-4">
         <div class="d-flex align-items-center justify-content-between py-1">
           <!-- Logo -->
@@ -37,7 +43,7 @@
               <li class="nav-item has-mega">
                 <a
                   class="nav-link"
-                  href="https://www.camicissima.it/camicieuomo"
+                  href="./camicie.html"
                   data-mega="camicie-uomo"
                   >Camicie Da Uomo</a
                 >
@@ -90,7 +96,7 @@
 
           <!-- Right icons -->
           <div class="header-icons d-flex align-items-center gap-3">
-            <button class="icon-btn" aria-label="search">
+            <button class="icon-btn search-toggle" aria-label="search">
               <i class="bi bi-search"></i>
             </button>
             <button
@@ -108,7 +114,9 @@
           </div>
         </div>
       </div>
-
+      <p class="green-strip">
+        <a href="/camicie.html">Personalizza la tua camicia</a>
+      </p>
       <!-- Mega menu panels -->
       <div class="mega-menu" id="megaMenu">
         <div class="container py-4">
@@ -526,13 +534,62 @@
       </div>
     </header>
 
+    <!-- search bar -->
+    <div class="search-overlay">
+      <div class="search-wrapper">
+        <!-- Search Icon -->
+        <button class="search-icon" type="button">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="22"
+            height="22"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <circle cx="11" cy="11" r="7"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+
+        <!-- Input -->
+        <input type="text" placeholder="Ricerca..." class="search-input" />
+
+        <!-- Close Button -->
+        <button class="close-search" type="button">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="26"
+            height="26"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+
     <!-- RESPONSIVE HEADER -->
     <header class="mobile-header d-lg-none">
+      <p class="top-badge">
+        <a href="https://www.camicissima.it/non-iron"
+          >Special Promo: 4 Camicie Non-Iron a scelta x 199,90 (-50%)!</a
+        >
+      </p>
       <!-- TOP -->
       <div class="mobile-header-top">
         <!-- LEFT -->
         <div class="mobile-left-icons">
-          <button class="mobile-icon-btn">
+          <button class="mobile-icon-btn search-toggle">
             <i class="bi bi-search"></i>
           </button>
 
@@ -566,10 +623,7 @@
 
       <!-- SCROLLABLE CATEGORY BUTTONS -->
       <div class="mobile-category-scroll">
-        <a
-          href="https://www.camicissima.it/camicieuomo"
-          class="mobile-cat-btn active"
-        >
+        <a href="./camicie.html" class="mobile-cat-btn active">
           Camicie Da Uomo
         </a>
 
@@ -603,7 +657,113 @@
           Franchising
         </a>
       </div>
+      <p class="green-strip">
+        <a href="/camicie.html">Personalizza la tua camicia</a>
+      </p>
     </header>
+
+    <div class="product-page-main">
+      <p class="page-loc">
+        <strong><a href="/">Home </a></strong> > Camicie da uomo
+      </p>
+      <h1 class="page-title">Camicie da uomo</h1>
+      <div class="filter-sec">
+        <button class="btn btn-outline-dark">
+          Filtri <i class="bi bi-filter"></i>
+        </button>
+      </div>
+
+      <section class="products-section">
+        <div class="products-grid" id="productsGrid"></div>
+      </section>
+    </div>
+
+    <section class="editorial-sec py-5">
+      <div class="container-fluid">
+        <p class="mb-2">
+          <i>L’abito non fa il monaco</i>, ma indossare
+          <strong>camicie di qualità e di marca</strong>
+          è un elemento importante per fare una buona prima impressione.
+          Infatti, le camicie da uomo costituiscono uno dei principali capi
+          d’abbigliamento nell’armadio di molti: versatili, eleganti e adatte ad
+          ogni occasione sono un vero e proprio passe-partout.
+        </p>
+
+        <p class="mb-3">
+          Per questo, acquistare una camicia duratura e che si adatti
+          perfettamente alle tue caratteristiche è fondamentale:
+          <strong>Camicissima</strong> conosce bene le necessità dei propri
+          clienti e mette a loro disposizione un vasto catalogo online di
+          camicie per uomo dal quale scegliere il modello che meglio si addice
+          al proprio stile e fisicità.
+        </p>
+
+        <h2 class="fw-bold mb-3">Quale camicia scegliere?</h2>
+
+        <p class="mb-2">
+          Le nostre camicie da uomo possono essere scelte in base all’<strong
+            >occasione</strong
+          >
+          per la quale devono essere indossate, scegliendo tra perfette da
+          abbinare con una cravatta fino a camicie casual per situazioni
+          informali. Se invece si è alla ricerca di qualcosa più “estrosa”, il
+          <strong>team di Camicissima</strong>
+          ha disegnato alcune proposte particolari che sapranno donare un tocco
+          di ricercatezza al tuo outfit.
+        </p>
+
+        <p class="mb-2">
+          Tra gli aspetti da considerare quando si desidera acquistare una
+          camicia di marca maschile ci sono non solo la tipologia di colletto e
+          di polsino, ma anche la vestibilità: in base alla propria fisicità è
+          possibile scegliere tra una camicia per uomo slim, regular o extra
+          slim.
+          <br /><br />
+          Perché poi non valutare l’opportunità di acquistare camicie No Stiro
+          che non necessitano di essere stirate? A questo proposito, abbiamo
+          studiato uno specifico tessuto che, pur essendo 100% cotone, consente
+          alla camicia di essere pronta per essere indossata appena si asciuga.
+        </p>
+
+        <p class="mb-3">
+          Inoltre, le nostre camicie sono realizzate con
+          <strong>materiale naturale</strong> (100% cotone) capace di resistere
+          anche alle giornate lavorative più intense, senza creare irritazioni e
+          garantendo la completa traspirazione. L’amore per i dettagli ci ha
+          portati a realizzare prodotti in cui la passione per l’artigianalità e
+          per il design Made in Italy si uniscono alla raffinatezza e alla
+          praticità.
+        </p>
+
+        <h2 class="fw-bold mb-3">Le nostre camicie da uomo online</h2>
+
+        <p class="mb-2">
+          La necessità di molti uomini è quella di poter acquistare online un
+          prodotto di alta qualità al miglior prezzo possibile.
+          <br />
+          Grazie all’ampia disponibilità presente sul nostro store online è
+          possibile scegliere tra camicie adatte a più occasioni: giornate
+          d’ufficio, estive o invernali e per situazioni formali.
+        </p>
+
+        <p class="mb-2">
+          <strong>L’attenzione per i particolari</strong>
+          caratterizza tutta la nostra offerta e il nostro catalogo: diversi
+          modelli di colletti per i gusti più ricercati, bottoni resistenti,
+          perfetto allineamento del motivo geometrico e la cura nelle cuciture
+          sono solo alcuni degli elementi che contraddistinguono le nostre
+          camicie da uomo.
+        </p>
+
+        <p class="mb-0">
+          Se sei alla ricerca di camicie online, sul nostro sito - ma anche nei
+          nostri negozi - troverai il modello che preferisci e che si addice al
+          tuo stile. La qualità dei tessuti e la varietà dei prodotti stupiranno
+          chi ancora non ci conosce o premieranno la fedeltà dei clienti più
+          affezionati!
+        </p>
+      </div>
+    </section>
 
     <!-- Top seller  -->
     <div class="container top-seller-sec">
@@ -956,5 +1116,6 @@
     <!-- Bootstrap JS bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/camicie.js"></script>
   </body>
 </html>
