@@ -62,7 +62,8 @@ p {
 }
 
 /* Product Grid */
-.product-page-main {
+.product-page-main,
+.giftcard-sec {
   margin-top: 140px;
 }
 .products-section {
@@ -161,7 +162,8 @@ p {
 }
 
 @media (max-width: 991px) {
-  .product-page-main {
+  .product-page-main,
+  .giftcard-sec {
     margin-top: 0;
   }
 

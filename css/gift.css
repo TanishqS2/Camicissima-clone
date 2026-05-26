@@ -1,0 +1,33 @@
+.giftcard-title {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.klarna-box {
+  font-size: 12px;
+}
+
+.add-cart-btn {
+  background-color: black;
+  color: #fff;
+}
+
+.add-cart-btn:hover {
+  background-color: #404040;
+  color: #fff;
+}
+
+.gift-price {
+  font-weight: 700;
+}
+
+.size-guide {
+  font-size: 12px;
+}
+
+.form-label,
+.qty-wrap h5 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #5e5e5e;
+}
