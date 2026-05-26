@@ -9,7 +9,63 @@
   margin-bottom: 20px;
 }
 
+.store-blur-sec {
+  padding: 20px;
+  background: url("https://www.camicissima.it/media/wysiwyg/BG_blur_Franchising_1500x500.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.blur-content-left {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.blur-content-left h2 {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.blur-content-left p {
+  font-size: 13px;
+}
+
+.perks-sec {
+  padding: 20px;
+}
+
 .perk {
   display: flex;
   justify-content: center;
+}
+
+.perk img {
+  max-width: 120px;
+  height: auto;
+}
+
+.advantage-grid {
+  padding: 15px;
+}
+
+.advantage-title {
+  font-size: 10px;
+  font-weight: 600;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.benefits-list-sec {
+  font-size: 13px;
+}
+
+@media (max-width: 991px) {
+  .franchising-main-sec {
+    margin-top: 0;
+  }
 }
