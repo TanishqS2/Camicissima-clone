@@ -117,3 +117,9 @@
   font-weight: 200;
   padding: 20px 0 10px;
 }
+
+@media (max-width: 991px) {
+  .pdp-sec {
+    margin-top: 0px;
+  }
+}
