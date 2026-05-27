@@ -1,0 +1,119 @@
+.pdp-sec {
+  margin-top: 160px;
+}
+
+.pdp-title {
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 400;
+}
+
+.discount-badge-pdp {
+  background-color: #000;
+  color: #fff;
+  font-weight: 500;
+  padding: 5px 10px;
+}
+
+.klarna-box {
+  font-size: 12px;
+  width: fit-content;
+}
+
+.color-circle {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 1;
+  border: 1px solid #000;
+}
+
+.sizes-wrap h5,
+.color-wrap h6 {
+  color: #5e5e5e;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.size-btn {
+  border: 1px solid #bababa;
+  background-color: transparent;
+  padding: 4px 8px;
+  font-weight: 300;
+  font-size: 12px;
+  min-width: 35px;
+}
+
+.size-btn:hover {
+  border-color: #000;
+  outline: 1px solid #000;
+}
+
+.qty-input {
+  padding: 3px 10px;
+  width: 54px;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid #bababa;
+}
+
+.btn-outline-dark:hover,
+.btn-dark:hover {
+  background: #404040;
+}
+
+.btn-dark,
+.btn-outline-dark {
+  padding: 13px;
+  font-size: 14px;
+}
+
+.store-availability {
+  font-size: 16px;
+}
+
+.accordion-item {
+  border: none;
+  border-bottom: 1px solid #bababa;
+}
+
+.accordion-button {
+  font-size: 14px;
+  font-weight: 200;
+  padding: 0;
+}
+
+.accordion-button span {
+  text-decoration: underline;
+}
+
+.accordion-button::after {
+  content: "+";
+  font-size: 30px;
+  font-weight: 100;
+  background-image: none;
+  height: auto;
+  width: auto;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: transparent;
+  color: #000;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: none;
+  content: "-";
+}
+
+.accordion-body {
+  font-size: 14px;
+  color: #5e5e5e;
+  font-weight: 200;
+  padding: 20px 0 10px;
+}
