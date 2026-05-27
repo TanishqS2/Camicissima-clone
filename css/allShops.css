@@ -1,0 +1,101 @@
+.store-locator-sec {
+  margin-top: 70px;
+}
+
+.store-locator-sec h2 {
+  font-size: 16px;
+}
+
+.store-sidebar {
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+}
+
+.store-list {
+  overflow-y: auto;
+  flex: 1;
+  padding-right: 10px;
+  scrollbar-width: none;
+}
+
+.store-list::-webkit-scrollbar {
+  width: 4px;
+}
+
+.store-list::-webkit-scrollbar-thumb {
+  background: #cfcfcf;
+}
+
+.store-item {
+  padding: 22px 0;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+.store-title {
+  font-size: 20px;
+  margin-bottom: 0px;
+  font-weight: 400;
+}
+
+.store-address {
+  font-size: 14px;
+  margin-bottom: 14px;
+}
+
+.pickup-badge {
+  background: #e9e9e9;
+  color: #999;
+  font-size: 10px;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.store-link {
+  color: #000;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.store-link:hover {
+  text-decoration: underline;
+}
+
+.form-check-input:checked {
+  background-color: #000;
+  border-color: #000;
+}
+
+.filter-input {
+  padding: 6px 9px;
+  border: 1px solid #000;
+  font-size: 10px;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.store-checks .form-check-label {
+  font-size: 13px;
+}
+
+.map-wrap iframe {
+  display: block;
+}
+
+@media (max-width: 991px) {
+  .store-sidebar {
+    height: auto;
+  }
+
+  .store-list {
+    max-height: 500px;
+  }
+
+  .map-wrap iframe {
+    height: 500px;
+  }
+
+  .store-locator-sec {
+    margin-top: 0px;
+  }
+}

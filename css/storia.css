@@ -1,0 +1,103 @@
+.storia-main-sec {
+  margin-top: 85px;
+}
+
+.hero-sec {
+  position: relative;
+}
+
+.hero-title {
+  position: absolute;
+  left: 10.97%;
+  bottom: 10.9%;
+  color: #fff;
+}
+
+.story-grid-sec {
+  padding: 45px;
+}
+
+.story-img-sec {
+  padding: 0;
+}
+
+.story-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.history-year {
+  font-size: 80px;
+  color: #cecece;
+}
+
+.history-title {
+  font-size: 40px;
+  color: #000;
+  font-weight: 400;
+}
+
+.history-content {
+  font-size: 15px;
+  color: #000;
+}
+
+.history-list {
+  list-style: disc;
+  padding-left: 40px;
+}
+
+.story-content-left .story-text {
+  padding-left: 5%;
+}
+
+.story-content-right .story-text {
+  padding-right: 5%;
+}
+
+.mission-sec {
+  background: url("https://www.camicissima.it/media/wysiwyg/03_BACKGROUND.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 12% 20%;
+}
+
+.mission-content p {
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+}
+
+.mission-title {
+  font-size: 80px;
+  color: #5f5f5f;
+  font-weight: 400;
+}
+
+@media (max-width: 991px) {
+  .storia-main-sec {
+    margin-top: 0;
+  }
+
+  .story-content-right {
+    flex-direction: column-reverse;
+  }
+  .mission-sec {
+    padding: 20% 20px;
+  }
+
+  .mission-content p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .story-grid-sec {
+    padding: 20px 30px;
+  }
+
+  .mission-title {
+    font-size: 60px;
+  }
+}

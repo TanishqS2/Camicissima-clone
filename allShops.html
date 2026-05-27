@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gift card da 50€ | Camicissima</title>
+    <title>Store Locator | Camicissima</title>
     <link
       rel="icon"
       type="image/x-icon"
@@ -26,16 +26,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/camicie.css" />
-    <link rel="stylesheet" href="css/gift.css" />
+    <link rel="stylesheet" href="css/allShops.css" />
   </head>
   <body>
     <header class="site-header">
-      <p class="top-badge">
-        <a href="https://www.camicissima.it/non-iron"
-          >Special Promo: 4 Camicie Non-Iron a scelta x 199,90 (-50%)!</a
-        >
-      </p>
       <div class="container-fluid px-4">
         <div class="d-flex align-items-center justify-content-between py-1">
           <!-- Logo -->
@@ -114,9 +108,7 @@
           </div>
         </div>
       </div>
-      <p class="green-strip">
-        <a href="/camicie.html">Personalizza la tua camicia</a>
-      </p>
+
       <!-- Mega menu panels -->
       <div class="mega-menu" id="megaMenu">
         <div class="container py-4">
@@ -580,11 +572,6 @@
 
     <!-- RESPONSIVE HEADER -->
     <header class="mobile-header d-lg-none">
-      <p class="top-badge">
-        <a href="https://www.camicissima.it/non-iron"
-          >Special Promo: 4 Camicie Non-Iron a scelta x 199,90 (-50%)!</a
-        >
-      </p>
       <!-- TOP -->
       <div class="mobile-header-top">
         <!-- LEFT -->
@@ -653,121 +640,230 @@
 
         <a href="./franchise.html" class="mobile-cat-btn"> Franchising </a>
       </div>
-      <p class="green-strip">
-        <a href="/camicie.html">Personalizza la tua camicia</a>
-      </p>
     </header>
 
-    <section class="giftcard-sec py-4">
-      <p class="page-loc">
-        <strong><a href="/">Home </a></strong> > Gift Cards
-      </p>
-      <div class="container px-lg-5">
-        <div class="row g-4 mt-4">
+    <section class="store-locator-sec py-4">
+      <div class="container-fluid">
+        <h2 class="text-center mb-4">Store Locator</h2>
+        <!-- filters -->
+        <div class="store-top mb-4">
+          <div class="row">
+            <div class="col-sm-12 col-md-3">
+              <div class="mb-3">
+                <label class="form-label d-block text-center">
+                  Cerca la città:
+                </label>
+
+                <input
+                  type="text"
+                  class="form-control filter-input"
+                  placeholder="Cerca"
+                />
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-9">
+              <div class="store-checks">
+                <div class="form-check mb-0">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    checked
+                    id="returnStore"
+                  />
+
+                  <label class="form-check-label" for="returnStore">
+                    Mostra negozi nei quali è possibile effettuare reso
+                  </label>
+                </div>
+
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    checked
+                    id="pickupStore"
+                  />
+
+                  <label class="form-check-label" for="pickupStore">
+                    Mostra negozi nei quali è possibile ritirare gli acquisti in
+                    negozio
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-5"></div>
+          </div>
+        </div>
+        <div class="row gap-sm-4 gap-lg-0">
           <!-- left -->
-          <div class="col-lg-6">
-            <div class="giftcard-img-wrap h-100">
-              <img
-                src="https://www.camicissima.it/media/catalog/product/g/i/gift_card_foto_1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=1280&width=1032&canvas=1032:1280"
-                alt="Gift Card"
-                class="img-fluid w-100"
-              />
+          <div class="col-lg-4">
+            <div class="store-sidebar">
+              <!-- store list -->
+              <div class="store-list">
+                <!-- item -->
+                <div class="store-item">
+                  <h4 class="store-title">
+                    Negozio Camicissima a Milano in Via dell'Orso, 2
+                  </h4>
+
+                  <p class="store-address">
+                    Via Dell'Orso, 2,20121, Milano (MI)
+                  </p>
+
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <span class="pickup-badge"> Ritiro in negozio </span>
+
+                    <a href="#" class="store-link"> Scopri di più </a>
+                  </div>
+                </div>
+
+                <!-- item -->
+                <div class="store-item">
+                  <h4 class="store-title">
+                    Camicissima - Centro Commerciale Le Cotoniere
+                  </h4>
+
+                  <p class="store-address">
+                    Via Dei Greci, 5, 84135 Salerno SA
+                  </p>
+
+                  <div class="text-end">
+                    <a href="#" class="store-link"> Scopri di più </a>
+                  </div>
+                </div>
+
+                <!-- item -->
+                <div class="store-item">
+                  <h4 class="store-title">
+                    Negozio Camicissima a Milano Magenta
+                  </h4>
+
+                  <p class="store-address">Corso Magenta, 5 CAP 20123 Milano</p>
+
+                  <div class="text-end">
+                    <a href="#" class="store-link"> Scopri di più </a>
+                  </div>
+                </div>
+
+                <!-- item -->
+                <div class="store-item">
+                  <h4 class="store-title">
+                    Negozio Camicissima a Milano in Via del Torchio 4
+                  </h4>
+
+                  <p class="store-address">Via Del Torchio 4, 20123 Milano</p>
+
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <span class="pickup-badge"> Ritiro in negozio </span>
+
+                    <a href="#" class="store-link"> Scopri di più </a>
+                  </div>
+                </div>
+
+                <!-- item -->
+                <div class="store-item border-0">
+                  <h4 class="store-title">Negozio Camicissima San Babila</h4>
+
+                  <p class="store-address">Corso Venezia 8, Milano</p>
+
+                  <div class="text-end">
+                    <a href="#" class="store-link"> Scopri di più </a>
+                  </div>
+                </div>
+                <!-- item -->
+                <div class="store-item">
+                  <h4 class="store-title">
+                    Negozio Camicissima a Milano in Via dell'Orso, 2
+                  </h4>
+
+                  <p class="store-address">
+                    Via Dell'Orso, 2,20121, Milano (MI)
+                  </p>
+
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <span class="pickup-badge"> Ritiro in negozio </span>
+
+                    <a href="#" class="store-link"> Scopri di più </a>
+                  </div>
+                </div>
+
+                <!-- item -->
+                <div class="store-item">
+                  <h4 class="store-title">
+                    Camicissima - Centro Commerciale Le Cotoniere
+                  </h4>
+
+                  <p class="store-address">
+                    Via Dei Greci, 5, 84135 Salerno SA
+                  </p>
+
+                  <div class="text-end">
+                    <a href="#" class="store-link"> Scopri di più </a>
+                  </div>
+                </div>
+
+                <!-- item -->
+                <div class="store-item">
+                  <h4 class="store-title">
+                    Negozio Camicissima a Milano Magenta
+                  </h4>
+
+                  <p class="store-address">Corso Magenta, 5 CAP 20123 Milano</p>
+
+                  <div class="text-end">
+                    <a href="#" class="store-link"> Scopri di più </a>
+                  </div>
+                </div>
+
+                <!-- item -->
+                <div class="store-item">
+                  <h4 class="store-title">
+                    Negozio Camicissima a Milano in Via del Torchio 4
+                  </h4>
+
+                  <p class="store-address">Via Del Torchio 4, 20123 Milano</p>
+
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <span class="pickup-badge"> Ritiro in negozio </span>
+
+                    <a href="#" class="store-link"> Scopri di più </a>
+                  </div>
+                </div>
+
+                <!-- item -->
+                <div class="store-item border-0">
+                  <h4 class="store-title">Negozio Camicissima San Babila</h4>
+
+                  <p class="store-address">Corso Venezia 8, Milano</p>
+
+                  <div class="text-end">
+                    <a href="#" class="store-link"> Scopri di più </a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
           <!-- right -->
-          <div class="col-lg-6">
-            <div class="giftcard-content">
-              <h1 class="giftcard-title mb-4">Gift Card Da 50€</h1>
-
-              <!-- klarna -->
-              <div class="klarna-box form-control text-center mb-4">
-                <span>
-                  Da <strong>9 €/mese</strong> oppure 3 pagamenti a interessi 0%
-                  con <strong>Klarna</strong>
-                </span>
-
-                <a href="#" class="text-decoration-none ms-1">
-                  Scopri di più
-                </a>
-              </div>
-
-              <!-- price -->
-              <div class="gift-price mb-4">50,00 €</div>
-
-              <hr class="mb-4" />
-
-              <!-- form -->
-              <form>
-                <div class="row g-3">
-                  <div class="col-md-6">
-                    <label class="form-label">
-                      Nome mittente <span>*</span>
-                    </label>
-
-                    <input type="text" class="form-control" />
-                  </div>
-
-                  <div class="col-md-6">
-                    <label class="form-label">
-                      Email mittente <span>*</span>
-                    </label>
-
-                    <input type="email" class="form-control" />
-                  </div>
-
-                  <div class="col-md-6">
-                    <label class="form-label">
-                      Nome del destinatario <span>*</span>
-                    </label>
-
-                    <input type="text" class="form-control" />
-                  </div>
-
-                  <div class="col-md-6">
-                    <label class="form-label">
-                      Email destinatario <span>*</span>
-                    </label>
-
-                    <input type="email" class="form-control" />
-                  </div>
-
-                  <div class="col-12">
-                    <label class="form-label"> Messaggio </label>
-
-                    <textarea rows="4" class="form-control"></textarea>
-                  </div>
-                </div>
-              </form>
-
-              <!-- guide -->
-              <div class="size-guide mt-4 mb-4">
-                <a href="#" class="text-decoration-none"> GUIDA TAGLIE </a>
-              </div>
-
-              <hr class="mb-4" />
-
-              <!-- qty -->
-              <div class="qty-wrap mb-4">
-                <h5 class="mb-3">Quantità:</h5>
-
-                <div class="d-flex align-items-center gap-3 w-25">
-                  <button class="btn qty-btn-minus">-</button>
-
-                  <input
-                    type="text"
-                    value="1"
-                    class="form-control text-center qty-input h-75"
-                  />
-
-                  <button class="btn qty-btn-plus">+</button>
-                </div>
-              </div>
-
-              <!-- button -->
-              <button class="btn add-cart-btn w-100">
-                Aggiungi al Carrello
-              </button>
+          <div class="col-lg-8">
+            <div class="map-wrap">
+              <iframe
+                src="https://www.google.com/maps?q=Milan&output=embed"
+                width="100%"
+                height="700"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
           </div>
         </div>
@@ -1079,7 +1175,7 @@
               <button class="btn-cami w-100" type="submit">Login</button>
             </form>
             <hr />
-            <p class="text-center small mb-2">Oppure accedi con</p>
+            <p class="text-center small mb-0">Oppure accedi con</p>
             <div class="d-flex gap-2">
               <button class="btn btn-outline-dark flex-fill">
                 <i class="bi bi-facebook me-2"></i>Facebook
@@ -1123,6 +1219,6 @@
     <!-- Bootstrap JS bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
-    <script src="js/gift.js"></script>
+    <!-- <script src="js/gift.js"></script> -->
   </body>
 </html>
